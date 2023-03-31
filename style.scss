@@ -4,32 +4,17 @@
 @import "./sass/utils/mixins";
 @import "./sass/utils/variables";
 @import "./sass/layout/header";
- * {
+@import "./sass/layout/section";
+
+
+
+
+* {
     margin: 0px;
  }
 body {
     @include font_roboto();
 }
-.section__explore {
-    background-color: $background-main;
-}
-.section__explore h1{
-    @include title_H1;
-    text-align: center;
-    padding: 49px 52px 0px 42px;
-}
-.section__explore p{
-    @include paragraph(18px);
-    text-align: center;
-}
-.section__explore--button {
-    padding: 27px 0px 65px 0px;
-    display: flex;
-    justify-content: center;
-}
-.section__explore--button button {
-   @include button;
-   @include box-shadow;
-   padding: 13px 18.75px 13px 18.75px;
-
+h1 {
+    @include title_h1 ;
 }

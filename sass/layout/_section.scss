@@ -1,0 +1,28 @@
+
+.section__explore {
+    background-color: $background-main;
+
+h1 {
+    text-align: center;
+    padding: 49px 52px 0px 42px;
+}
+ p {
+    @include paragraph(18px);
+    text-align: center;
+}
+&--button {
+    padding: 27px 0px 65px 0px;
+    display: flex;
+    justify-content: center;
+}
+&--button button {
+   @include button;
+   @include box-shadow;
+   padding: 13px 18.75px 13px 18.75px;
+
+}
+}
+.functioning__button {
+    @include box-shadow;
+    @include button_functioning;
+}
