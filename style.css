@@ -75,11 +75,9 @@
   gap: 25px;
   margin: 20px;
 }
-
-.functioning h1 {
+.functioning.functioning h1 {
   padding-top: 28px;
 }
-
 .functioning__button {
   display: flex;
   align-items: center;
@@ -87,7 +85,6 @@
   flex-direction: row;
   align-self: flex-end;
 }
-
 .functioning__button button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
@@ -101,12 +98,6 @@
   gap: 27px;
   font-size: 16px;
 }
-
-.fa-solid {
-  padding: 0px 0px 0px 33px;
-  color: #7E7E7E;
-}
-
 .functioning__button p {
   position: relative;
   z-index: 1;
@@ -121,6 +112,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+.fa-solid {
+  padding: 0px 0px 0px 33px;
+  color: #7E7E7E;
 }
 
 .restaurant {
@@ -141,16 +137,12 @@
 }
 
 .card__menu--article {
+  position: relative;
   width: 350px;
   height: 251px;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card__menu--text {
-  padding: 16px 0px 12px 13px;
-  position: relative;
 }
 
 .card__menu--article img {
@@ -159,6 +151,11 @@
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 15px 15px 0px 0px;
+}
+
+.card__menu--text {
+  padding: 16px 0px 12px 13px;
+  position: relative;
 }
 
 .card__menu--text h2 {
@@ -170,6 +167,15 @@
   font-weight: 300;
   padding-bottom: 5px;
   padding-top: 5px;
+}
+
+.card__menu--news {
+  position: absolute;
+  left: 255px;
+  top: 13px;
+  color: #008766;
+  background-color: #99E2D0;
+  padding: 7px 9px 6px 9px;
 }
 
 .fa-heart {
