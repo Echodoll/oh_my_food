@@ -23,7 +23,10 @@
                 border: none;
                 font-size: 16px;
             }
-            .header__search ::placeholder, .fa-solid{
+            &__search ::placeholder, .fa-solid{
                 color: $dark_grey;
+            }
+            &__search .fa-location-dot{
+                padding-left: 50px;
             }
         }

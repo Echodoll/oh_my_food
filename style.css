@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
 .header {
   display: flex;
   align-items: center;
@@ -31,11 +31,14 @@
   border: none;
   font-size: 16px;
 }
-.header .header__search ::-moz-placeholder {
+.header__search ::-moz-placeholder {
   color: #353535;
 }
-.header .header__search ::placeholder, .header .fa-solid {
+.header__search ::placeholder, .header .fa-solid {
   color: #353535;
+}
+.header__search .fa-location-dot {
+  padding-left: 50px;
 }
 
 .section__explore {
@@ -66,12 +69,141 @@
   padding: 13px 18.75px 13px 18.75px;
 }
 
+.functioning {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 20px;
+}
+
+.functioning h1 {
+  padding-top: 28px;
+}
+
 .functioning__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.functioning__button button {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   background-color: #F7F7F7;
   width: 322px;
   height: 72px;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 27px;
+  font-size: 16px;
+}
+
+.fa-solid {
+  padding: 0px 0px 0px 33px;
+  color: #7E7E7E;
+}
+
+.functioning__button p {
+  position: relative;
+  z-index: 1;
+  left: 13px;
+  border: 1px solid #9356DC;
+  border-radius: 25px;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.restaurant {
+  background-color: #F7F7F7;
+}
+.restaurant h1 {
+  padding: 54px 0px 25px 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.card__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.card__menu--article {
+  width: 350px;
+  height: 251px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card__menu--text {
+  padding: 16px 0px 12px 13px;
+  position: relative;
+}
+
+.card__menu--article img {
+  width: 100%;
+  height: 174px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.card__menu--text h2 {
+  font-size: 18px;
+}
+
+.card__menu--text p {
+  font-size: 17px;
+  font-weight: 300;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.fa-heart {
+  position: absolute;
+  left: 305px;
+  top: 15px;
+  font-size: 21px;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 22px;
+  margin-top: 66px;
+}
+.footer h1 {
+  font-family: "Shrikhand", cursive;
+  padding-bottom: 16px;
+  font-size: 18px;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0px;
+}
+.footer .fa-utensils, .footer .fa-handshake-angle {
+  color: white;
+  padding: 0px;
+  padding-right: 10px;
+}
+.footer .fa-utensils {
+  padding-right: 15px;
 }
 
 * {

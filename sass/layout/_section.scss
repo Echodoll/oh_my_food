@@ -22,7 +22,93 @@ h1 {
 
 }
 }
-.functioning__button {
-    @include box-shadow;
-    @include button_functioning;
-}
+
+
+    .functioning {
+            display: flex;
+            flex-direction: column;
+            gap:25px;   
+            margin:20px;     
+    }
+    .functioning h1 {
+        padding-top: 28px;
+    }
+    .functioning__button {
+            @include flex_center (row);
+            align-self: flex-end;
+    }
+    .functioning__button button {
+            @include box-shadow;
+            @include button_functioning;
+            border:none;
+            position: relative;
+            display:flex;
+            align-items: center;
+            gap:27px;
+            font-size: 16px;
+    }
+    .fa-solid{
+            padding: 0px 0px 0px 33px;
+            color: $color-icone;
+    }
+
+    .functioning__button p{
+        position: relative;
+        z-index: 1;
+        left: 13px;
+        border: 1px solid $background-button;
+        border-radius: 25px;
+        width: 24px;
+        height: 24px;
+        background-color: $background-button;
+        color:white ; 
+        @include flex_center (row);
+
+    }
+    .restaurant {
+        background-color: $background-main;
+        & h1 {
+            padding: 54px 0px 25px 20px;
+        }
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+         &__menu {
+        display: flex;
+        justify-content: center;
+         }
+    }
+        .card__menu--article {
+        width: 350px;
+        height: 251px;
+        border-radius: 15px;
+        background-color: white;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);    
+    }
+         .card__menu--text {
+        padding:16px 0px 12px 13px;
+        position:relative;
+    }
+    .card__menu--article img {
+        width: 100%;
+        height: 174px;
+        object-fit: cover;
+        border-radius: 15px 15px 0px 0px;
+    }
+    .card__menu--text h2 {
+        font-size: 18px;
+    }
+    .card__menu--text p {
+        font-size: 17px;
+        font-weight: 300;
+        padding-bottom: 5px;
+        padding-top:5px;
+    }
+    .fa-heart {
+        position: absolute;
+        left: 305px;
+        top: 15px;
+        font-size: 21px;
+    }
