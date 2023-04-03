@@ -69,8 +69,9 @@ h1 {
   
     .restaurant {
         background-color: $background-main;
+        padding: 54px 0px 66px 0px;
         & h1 {
-            padding: 54px 0px 25px 20px;
+            padding: 0px 0px 25px 20px;
         }
     }
     .card {

@@ -121,9 +121,10 @@
 
 .restaurant {
   background-color: #F7F7F7;
+  padding: 54px 0px 66px 0px;
 }
 .restaurant h1 {
-  padding: 54px 0px 25px 20px;
+  padding: 0px 0px 25px 20px;
 }
 
 .card {
@@ -189,7 +190,6 @@
   background-color: #353535;
   color: white;
   padding: 22px;
-  margin-top: 66px;
 }
 .footer h1 {
   font-family: "Shrikhand", cursive;
