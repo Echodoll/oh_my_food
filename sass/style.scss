@@ -1,14 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
  // font-family: 'Roboto', sans-serif;
-@import "./sass/utils/mixins";
-@import "./sass/utils/variables";
-@import "./sass/layout/header";
-@import "./sass/layout/section";
-@import "./sass/layout/footer";
-
-
-
+@import "./utils/mixins";
+@import "./utils/variables";
+@import "./layout/header";
+@import "./layout/section";
+@import "./layout/footer";
 
 * {
     margin: 0px;
