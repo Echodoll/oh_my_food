@@ -1,15 +1,188 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap');
- // font-family: 'Roboto', sans-serif;
+// font-family: 'Roboto', sans-serif;
 @import "./utils/mixins";
 @import "./utils/variables";
 
 * {
     margin: 0px;
- }
+}
+
 body {
     @include font_roboto();
 }
+
 h1 {
-    @include title_h1 ;
+    @include title_h1;
 }
- 
+
+.header {
+    @include flex_center (row);
+
+
+    &__img {
+        @include flex_center(row);
+        position: relative;
+        width: 100%;
+    }
+
+    &__img img {
+        width: 152px;
+        height: 34px;
+        padding: 14px 0px 7px 0px;
+    }
+
+    &__icone {
+        position: absolute;
+        width: 100%;
+    }
+
+    &__icone i {
+        padding: 23px;
+        text-decoration: none;
+        color: #353535;
+    }
+}
+
+.section__menu {
+    max-width: 1055px;
+    background-color: $background-main;
+
+}
+.main img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    position: relative;
+}
+
+main {
+    background-color: white;
+}
+
+.main__title {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 40px;
+    background-color: $background-main;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    &--h1 {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 32px;
+    }
+
+    & h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+    }
+
+    & i {
+        font-size: 20px;
+    }
+
+    & p {
+        font-size: 16px;
+        font-weight: 300;
+        margin-left: 13px;
+        padding-top: 42px;
+    }
+}
+
+.menu__text {
+    font-size: 15px;
+    font-weight: 300;
+    padding-left: 13px;
+    padding-bottom: 12px;
+    & span {
+        padding-bottom: 5px;
+        border-bottom: 3px solid #99E2D0;
+    }
+
+}
+.menu__global p {
+    padding-left: 13px;
+}
+.menu {
+    font-size: 16px;
+    font-weight: 300;
+    margin-left: 13px;
+    padding-bottom:40px;
+    max-width: 655px;
+
+    &__detail {
+        border-radius: 15px;
+        background-color: white;
+        padding: 15px;
+        margin: 13px 13px 0px 0px;
+        box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+    }
+
+    & h2 {
+        font-size: 18px;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+
+    & p {
+        font-size: 15px;
+        font-weight: 300;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
+.button {
+    padding: 5px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: $background-main;
+
+& button {
+   @include button;
+   @include box-shadow;
+   padding: 13px 18.75px 13px 18.75px;
+   width: 186px;
+   height: 50px;
+   font-size: 16px;
+   cursor: pointer;
+   transition: all 1000ms ;
+        &:hover {
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+            opacity: 0.80;
+        }
+
+}
+}
+.footer {
+    background-color: $dark_grey;
+    color:white;
+    padding: 22px;
+& h1{
+    font-family: 'Shrikhand', cursive;
+    padding-bottom: 16px;
+    font-size:18px;
+}
+&  ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    padding: 0px;
+}
+& .fa-utensils,.fa-handshake-angle {
+    color: white;
+    padding: 0px;
+    padding-right:10px;
+}
+& .fa-utensils{
+    padding-right: 15px;
+}
+}
