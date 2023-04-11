@@ -22,6 +22,9 @@ h1 {
 
 }
 }
+.functioning__button:hover i{
+        color: #9356DC;
+}
 .button {
     display: flex;
     flex-direction: column;
@@ -32,6 +35,7 @@ h1 {
             flex-direction: column;
             gap:25px;   
             margin:20px;     
+            
     
     &.functioning h1 {
         padding-top: 28px;
@@ -68,6 +72,7 @@ h1 {
             padding: 0px 0px 0px 33px;
             color: $color-icone;
     }
+    
     
   
     .restaurant {
@@ -119,6 +124,10 @@ h1 {
         padding-bottom: 5px;
         padding-top:5px;
     }
+    .card__menu--flex {
+        display: flex;
+        justify-content: space-between;
+    }
     .card__menu--news {
         position:absolute;
         right: 13px;
@@ -128,8 +137,7 @@ h1 {
         padding: 7px 9px 6px 9px;
     }
     .fa-heart {
-        position: absolute;
-        left: 305px;
-        top: 15px;
         font-size: 21px;
+        font-weight: 400;
+        padding-right: 33px;
     }

@@ -66,6 +66,10 @@
   padding: 13px 18.75px 13px 18.75px;
 }
 
+.functioning__button:hover i {
+  color: #9356DC;
+}
+
 .button {
   display: flex;
   flex-direction: column;
@@ -177,6 +181,11 @@
   padding-top: 5px;
 }
 
+.card__menu--flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .card__menu--news {
   position: absolute;
   right: 13px;
@@ -187,10 +196,9 @@
 }
 
 .fa-heart {
-  position: absolute;
-  left: 305px;
-  top: 15px;
   font-size: 21px;
+  font-weight: 400;
+  padding-right: 33px;
 }
 
 .footer {
