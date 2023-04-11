@@ -23,3 +23,22 @@
     padding-right: 15px;
 }
 }
+
+@media screen and (min-width:768px)
+{
+
+.footer {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    gap: 100px;
+    padding-top: 60px;
+    & ul {
+        flex-direction: row;
+        gap:30px;
+    }
+    & h1 {
+        padding-bottom: 0px;
+    }
+}
+}

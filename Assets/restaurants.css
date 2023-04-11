@@ -93,6 +93,7 @@ main {
   font-weight: 300;
   padding-left: 13px;
   padding-bottom: 12px;
+  display: block;
 }
 .menu__text span {
   padding-bottom: 5px;
@@ -117,7 +118,7 @@ main {
   margin: 13px 13px 0px 0px;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
-.menu h2 {
+.menu h3 {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 5px;
@@ -127,6 +128,10 @@ main {
   font-weight: 300;
   display: flex;
   justify-content: space-between;
+}
+.menu h2 {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 .button {
@@ -179,6 +184,34 @@ main {
 }
 .footer .fa-utensils {
   padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__menu--article {
+    width: 490px;
+  }
+  .section__menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    gap: 100px;
+    padding-top: 60px;
+  }
+  .footer ul {
+    flex-direction: row;
+    gap: 30px;
+  }
+  .footer h1 {
+    padding-bottom: 0px;
+  }
 }
 
 /*# sourceMappingURL=restaurants.css.map */

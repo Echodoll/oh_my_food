@@ -22,6 +22,11 @@ h1 {
 
 }
 }
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
     .functioning {
             display: flex;
             flex-direction: column;
@@ -116,7 +121,7 @@ h1 {
     }
     .card__menu--news {
         position:absolute;
-        left: 255px;
+        right: 13px;
         top: 13px;
         color:#008766;
         background-color: #99E2D0;
