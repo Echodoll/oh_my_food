@@ -296,5 +296,19 @@ h1 {
     padding: 0px;
   }
 }
+@media screen and (min-width: 375px) {
+  .functioning__button {
+    width: 100%;
+  }
+  .card__menu--article {
+    width: 100%;
+  }
+  .card {
+    margin: 20px;
+  }
+  .card h1 {
+    padding-left: 0Px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
