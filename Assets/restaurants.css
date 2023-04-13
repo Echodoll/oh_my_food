@@ -41,11 +41,6 @@ h1 {
   color: #353535;
 }
 
-.section__menu {
-  max-width: 1055px;
-  background-color: #F7F7F7;
-}
-
 .main img {
   width: 100%;
   height: 350px;
@@ -86,6 +81,11 @@ main {
   font-weight: 300;
   margin-left: 13px;
   padding-top: 42px;
+}
+
+.section__menu {
+  max-width: 1055px;
+  background-color: #F7F7F7;
 }
 
 .menu__text {
@@ -153,7 +153,7 @@ main {
   height: 50px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 1000ms;
+  transition: all 500ms;
 }
 .button button:hover {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
@@ -177,13 +177,65 @@ main {
   gap: 7px;
   padding: 0px;
 }
-.footer .fa-utensils, .footer .fa-handshake-angle {
+.footer .fa-utensils,
+.footer .fa-handshake-angle {
   color: white;
   padding: 0px;
   padding-right: 10px;
 }
 .footer .fa-utensils {
   padding-right: 15px;
+}
+
+.animation {
+  position: absolute;
+  left: 101%;
+  top: 0%;
+  height: 74px;
+  width: 59px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99E2D0;
+  transform: all 500ms;
+  opacity: 0;
+}
+.animation i {
+  border-radius: 50%;
+  color: #99E2D0;
+  background-color: white;
+  padding: 2px;
+}
+
+.menu__detail {
+  position: relative;
+}
+.menu__detail:hover .animation {
+  margin-left: -59px;
+  opacity: 1;
+  transition-duration: 500ms;
+}
+.menu__detail:not(:hover) .animation {
+  margin-left: 0px;
+  transition-duration: 700ms;
+}
+.menu__detail:hover span {
+  margin-left: -70px;
+  transition-duration: 500ms;
+}
+.menu__detail:not(:hover) span {
+  margin-left: 0px;
+  transition-duration: 700ms;
+}
+
+.animation__item {
+  display: flex;
+  justify-content: space-between;
+}
+.animation__item span {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
