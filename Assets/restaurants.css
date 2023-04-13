@@ -14,26 +14,18 @@ h1 {
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
 }
 .header__img {
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: row;
-  position: relative;
   width: 100%;
+  flex-direction: row;
 }
 .header__img img {
   width: 152px;
   height: 34px;
-  padding: 14px 0px 7px 0px;
-}
-.header__icone {
-  position: absolute;
-  width: 100%;
+  padding: 14px 50px 7px 0px;
 }
 .header__icone i {
   padding: 23px;
@@ -81,6 +73,21 @@ main {
   font-weight: 300;
   margin-left: 13px;
   padding-top: 42px;
+}
+
+.fa-heart {
+  font-size: 20px;
+}
+.fa-heart::before {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  position: relative;
+  right: 50%;
+  opacity: 0;
+}
+.fa-heart::after {
+  content: "";
+  background-color: linear-gradient(176deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 99%);
 }
 
 .section__menu {
@@ -222,7 +229,7 @@ main {
 }
 .menu__detail:not(:hover) .animation {
   width: 0px;
-  transition-duration: 300ms;
+  transition-duration: 1000ms;
   opacity: 1;
   visibility: hidden;
 }
@@ -232,7 +239,7 @@ main {
 }
 .menu__detail:not(:hover) span {
   margin-left: 0px;
-  transition-duration: 700ms;
+  transition-duration: 1000ms;
 }
 
 .animation__item {
