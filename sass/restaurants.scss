@@ -196,7 +196,7 @@ main {
 
 .animation {
     position: absolute;
-left: 101%;
+left: 100%;
     top: 0%;
     height: 74px;
     width: 59px;
@@ -217,6 +217,7 @@ left: 101%;
 }
 .menu__detail {
     position:relative;
+    cursor: pointer;
     &:hover .animation {
         margin-left:-59px;
         opacity: 1;
@@ -224,21 +225,18 @@ left: 101%;
      }
      &:not(:hover) .animation {
         margin-left:0px;
-        transition-duration: 700ms;
+        transition-duration: 300ms;
+        opacity: 1;
+        visibility: hidden;
      }
     &:hover span {
-    margin-left:-70px;
+    margin-left:-80px;
     transition-duration: 500ms;}
     &:not(:hover) span {
         margin-left:0px;
         transition-duration: 700ms;
      }
     }
-
-
-// essai animation //
-
-
 .animation__item {
     display: flex;
     justify-content: space-between;
@@ -246,9 +244,6 @@ left: 101%;
         font-weight: 700;
     }
 }
-
-
-
 
 @media screen and (min-width:768px) {
     .card__menu--article {
