@@ -190,6 +190,7 @@
 .card__menu--flex {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card__menu--news {
@@ -201,10 +202,36 @@
   padding: 7px 9px 6px 9px;
 }
 
+.card__menu--icone {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.icone {
+  padding-right: 33px;
+}
+
+.card__menu--icone .fa-solid {
+  margin-left: -58px;
+  opacity: 0;
+  font-size: 22px;
+  transition: all 1000ms ease-in-out;
+  height: 0px;
+}
+.card__menu--icone .fa-solid:hover {
+  background-image: linear-gradient(176deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 1;
+  height: 22px;
+}
+
 .fa-heart {
   font-size: 21px;
   font-weight: 400;
-  padding-right: 33px;
+  margin-left: -25px;
+  opacity: 1;
 }
 
 .footer {
@@ -224,7 +251,8 @@
   gap: 7px;
   padding: 0px;
 }
-.footer .fa-utensils, .footer .fa-handshake-angle {
+.footer .fa-utensils,
+.footer .fa-handshake-angle {
   color: white;
   padding: 0px;
   padding-right: 10px;

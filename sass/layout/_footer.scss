@@ -1,44 +1,50 @@
 .footer {
     background-color: $dark_grey;
-    color:white;
-    padding: 22px;
-& h1{
-    font-family: 'Shrikhand', cursive;
-    padding-bottom: 16px;
-    font-size:18px;
-}
-&  ul{
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap:7px;
-    padding: 0px;
-}
-& .fa-utensils,.fa-handshake-angle {
     color: white;
-    padding: 0px;
-    padding-right:10px;
-}
-& .fa-utensils{
-    padding-right: 15px;
-}
-}
+    padding: 22px;
 
-@media screen and (min-width:768px)
-{
-
-.footer {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row-reverse;
-    gap: 100px;
-    padding-top: 60px;
-    & ul {
-        flex-direction: row;
-        gap:30px;
-    }
     & h1 {
-        padding-bottom: 0px;
+        font-family: 'Shrikhand', cursive;
+        padding-bottom: 16px;
+        font-size: 18px;
+    }
+
+    & ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        padding: 0px;
+    }
+
+    & .fa-utensils,
+    .fa-handshake-angle {
+        color: white;
+        padding: 0px;
+        padding-right: 10px;
+    }
+
+    & .fa-utensils {
+        padding-right: 15px;
     }
 }
+
+@media screen and (min-width:768px) {
+
+    .footer {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+        gap: 100px;
+        padding-top: 60px;
+
+        & ul {
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        & h1 {
+            padding-bottom: 0px;
+        }
+    }
 }
