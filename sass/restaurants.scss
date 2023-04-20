@@ -186,7 +186,10 @@ main {
     width: 100%;
     text-overflow: ellipsis;
     transition: all 500ms;
-    padding: 13px;
+    padding: 13px 0px 13px 13px;
+    display: flex;
+    flex-wrap:wrap;
+    column-gap: 10px;
 
     }
 
@@ -267,7 +270,7 @@ main {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: #99E2D0;
-    margin-right:-64px;    
+    margin-right:-68px;    
     transition: all 500ms ease-in-out;
 
 
@@ -290,9 +293,11 @@ main {
 }
 }
 .price {
-    width: 98%;
     display: flex;
     justify-content: space-between;
+    & span {
+        font-weight: 700;
+    }
 }
 
 @media screen and (min-width:768px) {
