@@ -35,7 +35,7 @@ h1 {
 
 .main img {
   width: 100%;
-  height: 350px;
+  height: 275px;
   object-fit: cover;
   position: relative;
 }
@@ -64,6 +64,7 @@ main {
 .main__title h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
+  margin-left: -10px;
 }
 .main__title i {
   font-size: 26px;
@@ -77,13 +78,20 @@ main {
 
 .fa-heart {
   position: absolute;
-  top: 38px;
+  top: 0px;
+  right: 0px;
   z-index: 1;
 }
 
+.icone {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
 .icone__heart {
   position: absolute;
-  top: 37px;
+  top: -2px;
+  right: -2px;
   opacity: 0;
   transform: scale(0);
   transform-origin: bottom;
@@ -97,7 +105,7 @@ main {
 .icone:hover .icone__heart {
   opacity: 1;
   transform: scale(1);
-  font-size: 28px;
+  font-size: 29px;
 }
 
 .section__menu {
@@ -112,6 +120,7 @@ main {
   padding-bottom: 12px;
   display: block;
   opacity: 0;
+  margin-bottom: 12px;
 }
 .menu__text span {
   padding-bottom: 5px;
@@ -125,9 +134,12 @@ main {
 .menu {
   font-size: 16px;
   font-weight: 300;
-  margin-left: 13px;
-  padding-bottom: 40px;
   max-width: 655px;
+  padding: 10px;
+}
+.menu__plat, .menu__dessert {
+  margin-top: 40px;
+  margin-bottom: 12px;
 }
 .menu__detail {
   border-radius: 15px;
@@ -141,7 +153,7 @@ main {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 5px;
-  width: 85%;
+  width: 83%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -152,7 +164,7 @@ main {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 85%;
+  width: 83%;
 }
 .menu h2 {
   font-size: 15px;
@@ -178,7 +190,7 @@ main {
 }
 
 .button {
-  padding: 5px 0px 40px 0px;
+  padding: 20px 0px 40px 0px;
   display: flex;
   justify-content: center;
   background-color: #F7F7F7;
