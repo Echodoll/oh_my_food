@@ -262,6 +262,8 @@
   align-items: center;
   gap: 27px;
   font-size: 16px;
+  text-decoration: none;
+  color: black;
 }
 .functioning__button p {
   position: relative;
