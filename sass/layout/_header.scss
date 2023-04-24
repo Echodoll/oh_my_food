@@ -4,6 +4,7 @@
 
     &__img {
         @include flex_center(row);
+        width: 100%;
     }
 
     &__img img {

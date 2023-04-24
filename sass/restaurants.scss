@@ -341,61 +341,46 @@ main {
     }
 }
 
-.fadein {
-    animation: fadein 1400ms forwards;
+.fadein1{
+    animation: fadein 300ms  forwards;
 }
-
-.fadein:nth-child(1) {
-    animation-delay: 0ms;
+.fadein2 {
+        animation: fadein 300ms  200ms forwards;
 }
-
-.fadein:nth-child(2) {
-    animation-delay: 200ms;
+.fadein3{
+    animation: fadein 300ms  400ms forwards;
 }
-
-.fadein:nth-child(3) {
-    animation-delay: 400ms;
+.fadein4 {
+    animation: fadein 300ms  600ms forwards;
 }
-
-.fadein:nth-child(4) {
-    animation-delay: 600ms;
+.fadein5{
+    animation: fadein 300ms  800ms forwards;
 }
-
-.fadein:nth-child(5) {
-    animation-delay: 800ms;
+    
+.fadein6 {
+    animation: fadein 300ms  1000ms forwards;
+    }
+.fadein7{
+    animation: fadein 300ms  1200ms forwards;
 }
-
-.fadein:nth-child(6) {
-    animation-delay: 1000ms;
-}
-
-.fadein:nth-child(7) {
-    animation-delay: 1200ms;
-}
-
-.fadein:nth-child(8) {
-    animation-delay: 1400ms;
-}
-
-.fadein:nth-child(9) {
-    animation-delay: 1600ms;
-}
-
-.fadein:nth-child(10) {
-    animation-delay: 1800ms;
-}
-
-.fadein:nth-child(11) {
-    animation-delay: 2000ms;
-}
-
-.fadein:nth-child(12) {
-    animation-delay: 2200ms;
-}
-
-.fadein:nth-child(13) {
-    animation-delay: 2400ms;
-}
+.fadein8{
+    animation: fadein 300ms  1400ms forwards;
+    }
+     .fadein9 {
+        animation: fadein 300ms  1600ms forwards;
+    }
+    .fadein10{
+        animation: fadein 300ms  1800ms forwards;
+    }
+        
+    .fadein11 {
+        animation: fadein 300ms  2000ms forwards;
+        }
+    .fadein12{
+        animation: fadein 300ms  2200ms forwards;
+    }
+    .fadein13{
+        animation: fadein 300ms  400ms forwards;}         
 
 //Responsive //
 @media screen and (min-width:768px) {
