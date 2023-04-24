@@ -37,60 +37,56 @@
     border-radius: 50%;
     margin-top: 400px;
     margin-right: 20px;
-    animation: spin 1000ms infinite linear;
+    animation: spin 1200ms infinite linear;
 }
 
 .letter:nth-child(1) {
-    animation-delay: 0.1s;
+    animation-delay: 100ms;
 }
 
 .letter:nth-child(2) {
-    animation-delay: 0.2s;
+    animation-delay: 200ms;
 }
 
 .letter:nth-child(3) {
-    animation-delay: 0.3s;
+    animation-delay: 300ms;
 }
 
 .letter:nth-child(4) {
-    animation-delay: 0.4s;
+    animation-delay: 400ms;
 }
 
 .letter:nth-child(5) {
-    animation-delay: 0.5s;
+    animation-delay: 500ms;
 }
 
 .letter:nth-child(6) {
-    animation-delay: 0.6s;
+    animation-delay: 600ms;
 }
 
 .letter:nth-child(7) {
-    animation-delay: 0.7s;
+    animation-delay: 700ms;
 }
 
 .letter:nth-child(8) {
-    animation-delay: 0.8s;
+    animation-delay: 800ms;
 }
 
 .letter:nth-child(9) {
-    animation-delay: 0.9s;
+    animation-delay: 900ms;
 }
 
 .letter:nth-child(10) {
-    animation-delay: 0.10s;
+    animation-delay: 1000ms;
 }
 
 .letter:nth-child(11) {
-    animation-delay: 0.11s;
+    animation-delay: 1100ms;
 }
-
 .letter:nth-child(12) {
-    animation-delay: 0.12s;
+    animation-delay: 1200ms;
 }
 
-.letter:nth-child(13) {
-    animation-delay: 0.13s;
-}
 
 @keyframes letter {
     0% {
