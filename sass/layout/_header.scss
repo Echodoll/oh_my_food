@@ -20,20 +20,19 @@
         background-color: $grey;
         width: 100%;
     }
+    & i {
+        padding-left: 6px;
+    }
 
-    &__search input {
+    & input {
         background: none;
         border: none;
         font-size: 16px;
     }
 
-    &__search ::placeholder,
+    &::placeholder,
     .fa-solid {
         color: $dark_grey;
-    }
-
-    &__search .fa-location-dot {
-        padding-left: 60px;
     }
 }
 
