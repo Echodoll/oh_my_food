@@ -83,6 +83,7 @@
 .letter:nth-child(11) {
     animation-delay: 1100ms;
 }
+
 .letter:nth-child(12) {
     animation-delay: 1200ms;
 }
@@ -91,7 +92,6 @@
 @keyframes letter {
     0% {
         color: #FF79DA;
-        /*transform: translateY(0px);*/
     }
 
     90% {
@@ -171,11 +171,11 @@
         transition: all 500ms;
 
         &:hover {
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
-            opacity: 0.80;
+            box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.45);
+            opacity: 0.70;
         }
-
     }
+
 }
 
 .functioning__button:hover i {
@@ -219,7 +219,7 @@
         gap: 27px;
         font-size: 16px;
         text-decoration: none;
-        color:black; 
+        color: black;
     }
 
     &__button p {
@@ -354,9 +354,10 @@
 }
 
 @media screen and (min-width:768px) {
-    .functioning{
+    .functioning {
         margin: 20px 20px 50px 0px;
     }
+
     .button h3 {
         margin-left: 0px;
     }
