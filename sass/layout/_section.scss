@@ -168,7 +168,7 @@
         @include box-shadow;
         padding: 13px 18.75px 13px 18.75px;
         cursor: pointer;
-        transition: all 500ms;
+        transition: all 1000ms;
 
         &:hover {
             box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.45);

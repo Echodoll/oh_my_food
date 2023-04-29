@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap");
-
 * {
   margin: 0px;
 }
@@ -17,20 +16,17 @@ h1 {
   display: flex;
   justify-content: center;
 }
-
 .header__img {
   display: flex;
   justify-content: center;
   width: 100%;
   flex-direction: row;
 }
-
 .header__img img {
   width: 152px;
   height: 34px;
   padding: 14px 50px 7px 0px;
 }
-
 .header__icone i {
   padding: 23px;
   text-decoration: none;
@@ -57,7 +53,6 @@ main {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
-
 .main__title--h1 {
   width: 100%;
   display: flex;
@@ -66,17 +61,14 @@ main {
   gap: 30px;
   padding-top: 32px;
 }
-
 .main__title h1 {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   margin-left: -10px;
 }
-
 .main__title i {
   font-size: 26px;
 }
-
 .main__title p {
   font-size: 16px;
   font-weight: 300;
@@ -96,7 +88,6 @@ main {
   width: 30px;
   height: 30px;
 }
-
 .icone__heart {
   position: absolute;
   top: -2px;
@@ -131,7 +122,6 @@ main {
   opacity: 0;
   margin-bottom: 12px;
 }
-
 .menu__text span {
   padding-bottom: 5px;
   border-bottom: 3px solid #99E2D0;
@@ -143,13 +133,10 @@ main {
   max-width: 655px;
   padding: 10px;
 }
-
-.menu__plat,
-.menu__dessert {
+.menu__plat, .menu__dessert {
   margin-top: 40px;
   margin-bottom: 12px;
 }
-
 .menu__detail {
   border-radius: 15px;
   background-color: white;
@@ -163,15 +150,12 @@ main {
   width: 100%;
   opacity: 0;
 }
-
 .menu__detail:hover .menu__detail--title {
   width: calc(100% - 82px);
 }
-
 .menu__detail:hover .fa-check {
   animation: rotate 800ms forwards;
 }
-
 .menu h3 {
   font-size: 18px;
   font-weight: 500;
@@ -180,7 +164,6 @@ main {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .menu p {
   font-size: 15px;
   font-weight: 300;
@@ -189,7 +172,6 @@ main {
   text-overflow: ellipsis;
   width: 80%;
 }
-
 .menu h2 {
   font-size: 15px;
   font-weight: 300;
@@ -200,7 +182,6 @@ main {
   display: flex;
   justify-content: space-between;
 }
-
 .menu__detail--price span {
   font-weight: 700;
   padding-right: 16Px;
@@ -229,7 +210,6 @@ main {
   transition: all 500ms ease-in-out;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
-
 .animation i {
   border-radius: 50%;
   color: #99E2D0;
@@ -243,7 +223,6 @@ main {
   justify-content: center;
   background-color: #F7F7F7;
 }
-
 .button button {
   background: linear-gradient(176deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 99%);
   border-radius: 25px;
@@ -257,9 +236,8 @@ main {
   height: 50px;
   font-size: 16px;
   cursor: pointer;
-  transition: all 500ms;
+  transition: all 1000ms;
 }
-
 .button button:hover {
   box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.45);
   opacity: 0.7;
@@ -270,13 +248,11 @@ main {
   color: white;
   padding: 22px;
 }
-
 .footer h1 {
   font-family: "Shrikhand", cursive;
   padding-bottom: 16px;
   font-size: 18px;
 }
-
 .footer ul {
   list-style: none;
   display: flex;
@@ -284,14 +260,12 @@ main {
   gap: 7px;
   padding: 0px;
 }
-
 .footer .fa-utensils,
 .footer .fa-handshake-angle {
   color: white;
   padding: 0px;
   padding-right: 10px;
 }
-
 .footer .fa-utensils {
   padding-right: 15px;
 }
@@ -300,24 +274,20 @@ main {
   from {
     transform: rotate(0);
   }
-
   to {
     transform: rotate(360deg);
   }
 }
-
 @keyframes fadein {
   from {
     transform: translateY(70px);
     opacity: 0;
   }
-
   to {
     transform: translateY(0);
     opacity: 1;
   }
 }
-
 .fadein1 {
   animation: fadein 500ms ease-in-out forwards;
 }
@@ -374,29 +344,24 @@ main {
   .card__menu--article {
     width: 490px;
   }
-
   .section__menu {
     margin-left: auto;
     margin-right: auto;
   }
-
   .menu {
     margin-left: auto;
     margin-right: auto;
   }
-
   .footer {
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
     padding-top: 60px;
   }
-
   .footer ul {
     flex-direction: row;
     gap: 14px;
   }
-
   .footer h1 {
     padding-bottom: 0px;
     padding-left: 60px;
